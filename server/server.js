@@ -5,7 +5,7 @@ const logger = require('morgan');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const SourceMapSupport = require('source-map-support');
-const routes = require('./src/routes/api');
+const routes = require('./src/routes/teapi');
 
 // define our app using express
 const app = express();
@@ -33,7 +33,7 @@ app.get('/', (req,res) => {
   return res.end('Api working');
 })
 
-app.use('/api', routes);
+app.use('/teapi', routes);
 
 // catch 404
 app.use((req, res, next) => {
