@@ -20,7 +20,7 @@ new detailsModel(req.body)
 
 Details.prototype.updateDetailsById = (req,res) => 
     detailsModel
-    .findByIdAndUpdate(req.body._id,{ firstName : req.body.firstName, lastName : req.body.lastName, address: req.body.address},(err,result) => err ? res.send(err) : res.send(result))
+    .findByIdAndUpdate(req.body._id,{ name: req.body.name , address: req.body.address},(err,result) => err ? res.send(err) : res.send(result))
 
 
 Details.prototype.deleteDetailsById = (req,res) => 
