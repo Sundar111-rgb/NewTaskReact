@@ -5,8 +5,7 @@ const controller = new detailsController();
 
 router.post('/',controller.addDetails);
 router.get('/',controller.getDetails);
-router.get('/:id',controller.getDetailsById);
-router.get('/custom/:id',controller.getDetailsByCustomId);
+router.get('/custom/',controller.getDetailsByCustomId);
 router.put('/',controller.updateDetailsById);
 router.delete('/',controller.deleteDetailsById);
 
