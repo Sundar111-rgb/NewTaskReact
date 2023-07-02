@@ -1,8 +1,8 @@
 const  express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
-const logger = require('morgan');
-const mongoose = require('mongoose');
+//const logger = require('morgan');
+//const mongoose = require('mongoose');
 const cors = require('cors');
 const SourceMapSupport = require('source-map-support');
 const routes = require('./src/routes/teapi');
@@ -26,8 +26,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 const port = process.env.PORT || 3001;
 
 // connect to database
-mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/');
+//mongoose.Promise = global.Promise;
+//mongoose.connect('mongodb://localhost:27017/');
 SourceMapSupport.install();
 app.get('/', (req,res) => {
   return res.end('Api working');

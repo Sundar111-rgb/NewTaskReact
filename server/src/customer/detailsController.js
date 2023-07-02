@@ -1,31 +1,18 @@
-const detailsModel = require("./detailsModel");
 
 class Details {
 } 
 
 Details.prototype.getDetails = (req,res) => 
-detailsModel
-            .find({},(err,Details) => err ? res.send(err) : res.send({'success':true,'message':'Details fetched successfully',Details}))
+ res.send({'success':true,'message':'Details fetched successfully',Details})
 
-
+ 
 Details.prototype.getDetailsByCustomId = (req,res) =>
-detailsModel
-            .findOne({id:req.body.id},(err,result) => err ? res.send(err) : res.send({'success':true,'message':'Details fetched successfully',result}))
+ res.send({'success':true,'message':'Details fetched successfully',id:req.body.id})
 
 
 Details.prototype.addDetails = (req,res) => 
-new detailsModel(req.body)
-                          .save((err,result)=> err ? res.send(err): res.send({'success':true,'message':'Details fetched successfully',result}))
+ res.send({'success':true,'message':'Details fetched successfully',id:req.body.id, name: req.body.name , address: req.body.address})
 
-
-Details.prototype.updateDetailsById = (req,res) => 
-    detailsModel
-    .findByIdAndUpdate(req.body._id,{ name: req.body.name , address: req.body.address},(err,result) => err ? res.send(err) : res.send(result))
-
-
-Details.prototype.deleteDetailsById = (req,res) => 
-    detailsModel
-    .findByIdAndRemove(req.body._id,(err,result) => err ? res.send(err) : res.send(result))
 
 
 

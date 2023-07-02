@@ -8,5 +8,5 @@ router.get('/',controller.getDetails);
 router.get('/custom/',controller.getDetailsByCustomId);
 router.put('/',controller.updateDetailsById);
 router.delete('/',controller.deleteDetailsById);
-
+ 
 module.exports = router;
