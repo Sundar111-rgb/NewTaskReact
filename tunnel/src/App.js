@@ -1,12 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
-import ResponsiveDrawer from './ResponsiveDrawer';
+
+import MiniDrawer from './MiniDrawer';
+import { BrowserRouter, Routes, Route, Router } from 'react-router-dom';
+import Jobs from './Jobs';
+import CustomDrawer from './CustomDrawer';
+import Hello1 from './pages/Hello1';
+import Hello2 from './pages/Hello2';
+import Hello3 from './pages/Hello3';
 
 function App() {
   return (
-    <div className="App">
-      <ResponsiveDrawer />
-    </div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<CustomDrawer />} />
+          <Route path="/Jobs" element={<Jobs />} />
+          <Route path="/Hello1" element={<Hello1 />} />
+          <Route path="/Hello2" element={<Hello2 />} />
+          <Route path="/Hello3" element={<Hello3 />} />
+        </Routes>
+      </Router> 
+     
   );
 }
 
