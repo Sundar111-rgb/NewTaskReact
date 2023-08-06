@@ -2,8 +2,8 @@ import React from 'react';
 
 export default (props) => {
     return (
-        <div>
-            <p>Hello3</p>
-        </div>
+        <div style={{ paddingLeft:400}}>
+        <p>Hello3</p>
+    </div>
     );
 }

@@ -10,16 +10,15 @@ import Hello3 from './pages/Hello3';
 
 function App() {
   return (
-      <Router>
+      <BrowserRouter>
+        <CustomDrawer />
         <Routes>
-          <Route path="/" element={<CustomDrawer />} />
-          <Route path="/Jobs" element={<Jobs />} />
           <Route path="/Hello1" element={<Hello1 />} />
           <Route path="/Hello2" element={<Hello2 />} />
           <Route path="/Hello3" element={<Hello3 />} />
         </Routes>
-      </Router> 
-     
+      </BrowserRouter> 
+    
   );
 }
 

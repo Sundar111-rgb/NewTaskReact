@@ -203,7 +203,7 @@ export default function CustomDrawer() {
       </Drawer>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }} style={{ backgroundColor:'#6392F7'}}>
         <DrawerHeader />
-
+     
       </Box>
      
     </Box>
