@@ -130,7 +130,7 @@ export default function CustomDrawer() {
         </DrawerHeader>
         <Divider />
         <List>
-            <ListItem key={`Hello1`} disablePadding sx={{ display: 'block' }} onClick={() => { navigate('/Hello1')}}>
+            <ListItem key={`Introduction and About Me`} disablePadding sx={{ display: 'block' }} onClick={() => { navigate('/Introduction and About Me')}}>
               <ListItemButton
                 sx={{
                   minHeight: 48,
@@ -147,14 +147,14 @@ export default function CustomDrawer() {
                 >
                   <InboxIcon />
                 </ListItemIcon>
-                <ListItemText primary={`Hello1`} sx={{ opacity: open ? 1 : 0 }} />
+                <ListItemText primary={`Introduction and About Me`} sx={{ opacity: open ? 1 : 0 }} />
                
               </ListItemButton>
             </ListItem>
         </List>
         <Divider />
         <List>
-            <ListItem key={`Hello2`} disablePadding sx={{ display: 'block' }}  onClick={() => { navigate('/Hello2')}}>
+            <ListItem key={`Resume/CV`} disablePadding sx={{ display: 'block' }}  onClick={() => { navigate('/Resume/CV')}}>
               <ListItemButton
                 sx={{
                   minHeight: 48,
@@ -173,13 +173,13 @@ export default function CustomDrawer() {
                 >
                   <InboxIcon /> 
                 </ListItemIcon>
-                <ListItemText primary={'Hello2'} sx={{ opacity: open ? 1 : 0 }} />
+                <ListItemText primary={'Resume/CV'} sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
             </ListItem>
         </List>
         <Divider />
         <List>
-        <ListItem key={`Hello3`} disablePadding sx={{ display: 'block' }}  onClick={() => { navigate('/Hello3')}}>
+        <ListItem key={`Projects`} disablePadding sx={{ display: 'block' }}  onClick={() => { navigate('/Projects')}}>
               <ListItemButton
                 sx={{
                   minHeight: 48,
@@ -196,7 +196,191 @@ export default function CustomDrawer() {
                 >
                    <InboxIcon /> 
                 </ListItemIcon>
-                <ListItemText primary={'Hello3'} sx={{ opacity: open ? 1 : 0 }} />
+                <ListItemText primary={'Projects'} sx={{ opacity: open ? 1 : 0 }} />
+              </ListItemButton>
+            </ListItem>
+        </List>
+        <Divider />
+        <List>
+        <ListItem key={`Code Samples`} disablePadding sx={{ display: 'block' }}  onClick={() => { navigate('/Code Samples')}}>
+              <ListItemButton
+                sx={{
+                  minHeight: 48,
+                  justifyContent: open ? 'initial' : 'center',
+                  px: 2.5,
+                }}
+              >
+                <ListItemIcon
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : 'auto',
+                    justifyContent: 'center',
+                  }}
+                >
+                   <InboxIcon /> 
+                </ListItemIcon>
+                <ListItemText primary={'Code Samples'} sx={{ opacity: open ? 1 : 0 }} />
+              </ListItemButton>
+            </ListItem>
+        </List>
+        <Divider />
+        <List>
+        <ListItem key={`Skills and Technologies`} disablePadding sx={{ display: 'block' }}  onClick={() => { navigate('/Skills and Technologies')}}>
+              <ListItemButton
+                sx={{
+                  minHeight: 48,
+                  justifyContent: open ? 'initial' : 'center',
+                  px: 2.5,
+                }}
+              >
+                <ListItemIcon
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : 'auto',
+                    justifyContent: 'center',
+                  }}
+                >
+                   <InboxIcon /> 
+                </ListItemIcon>
+                <ListItemText primary={'Skills and Technologies'} sx={{ opacity: open ? 1 : 0 }} />
+              </ListItemButton>
+            </ListItem>
+        </List>
+        <Divider />
+        <List>
+        <ListItem key={`Professional Experience`} disablePadding sx={{ display: 'block' }}  onClick={() => { navigate('/Professional Experience')}}>
+              <ListItemButton
+                sx={{
+                  minHeight: 48,
+                  justifyContent: open ? 'initial' : 'center',
+                  px: 2.5,
+                }}
+              >
+                <ListItemIcon
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : 'auto',
+                    justifyContent: 'center',
+                  }}
+                >
+                   <InboxIcon /> 
+                </ListItemIcon>
+                <ListItemText primary={'Projects'} sx={{ opacity: open ? 1 : 0 }} />
+              </ListItemButton>
+            </ListItem>
+        </List>
+        <Divider />
+        <List>
+        <ListItem key={`Projects`} disablePadding sx={{ display: 'block' }}  onClick={() => { navigate('/Projects')}}>
+              <ListItemButton
+                sx={{
+                  minHeight: 48,
+                  justifyContent: open ? 'initial' : 'center',
+                  px: 2.5,
+                }}
+              >
+                <ListItemIcon
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : 'auto',
+                    justifyContent: 'center',
+                  }}
+                >
+                   <InboxIcon /> 
+                </ListItemIcon>
+                <ListItemText primary={'Professional Experience'} sx={{ opacity: open ? 1 : 0 }} />
+              </ListItemButton>
+            </ListItem>
+        </List>
+        <Divider />
+        <List>
+        <ListItem key={`Projects`} disablePadding sx={{ display: 'block' }}  onClick={() => { navigate('/Projects')}}>
+              <ListItemButton
+                sx={{
+                  minHeight: 48,
+                  justifyContent: open ? 'initial' : 'center',
+                  px: 2.5,
+                }}
+              >
+                <ListItemIcon
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : 'auto',
+                    justifyContent: 'center',
+                  }}
+                >
+                   <InboxIcon /> 
+                </ListItemIcon>
+                <ListItemText primary={'Projects'} sx={{ opacity: open ? 1 : 0 }} />
+              </ListItemButton>
+            </ListItem>
+        </List>
+        <Divider />
+        <List>
+        <ListItem key={`Projects`} disablePadding sx={{ display: 'block' }}  onClick={() => { navigate('/Projects')}}>
+              <ListItemButton
+                sx={{
+                  minHeight: 48,
+                  justifyContent: open ? 'initial' : 'center',
+                  px: 2.5,
+                }}
+              >
+                <ListItemIcon
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : 'auto',
+                    justifyContent: 'center',
+                  }}
+                >
+                   <InboxIcon /> 
+                </ListItemIcon>
+                <ListItemText primary={'Projects'} sx={{ opacity: open ? 1 : 0 }} />
+              </ListItemButton>
+            </ListItem>
+        </List>
+        <Divider />
+        <List>
+        <ListItem key={`Projects`} disablePadding sx={{ display: 'block' }}  onClick={() => { navigate('/Projects')}}>
+              <ListItemButton
+                sx={{
+                  minHeight: 48,
+                  justifyContent: open ? 'initial' : 'center',
+                  px: 2.5,
+                }}
+              >
+                <ListItemIcon
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : 'auto',
+                    justifyContent: 'center',
+                  }}
+                >
+                   <InboxIcon /> 
+                </ListItemIcon>
+                <ListItemText primary={'Projects'} sx={{ opacity: open ? 1 : 0 }} />
+              </ListItemButton>
+            </ListItem>
+        </List>
+        <Divider />
+        <List>
+        <ListItem key={`Technical Posts`} disablePadding sx={{ display: 'block' }}  onClick={() => { navigate('/Technical Posts')}}>
+              <ListItemButton
+                sx={{
+                  minHeight: 48,
+                  justifyContent: open ? 'initial' : 'center',
+                  px: 2.5,
+                }}
+              >
+                <ListItemIcon
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : 'auto',
+                    justifyContent: 'center',
+                  }}
+                >
+                   <InboxIcon /> 
+                </ListItemIcon>
+                <ListItemText primary={'Technical Posts'} sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
             </ListItem>
         </List>
